@@ -1,0 +1,46 @@
+.login {
+    display: block;
+    padding-top: 20px;
+    font-size: 100%;
+    align-self: center;
+    margin-left: 275px;
+}
+
+.login-center
+{
+    display: grid;
+    width: 100%;
+}
+
+.login-form {
+    width: 550px;
+    background-color: white;
+    align-items: center;
+    border-radius: 2px;
+    border: 1px solid rgb(219, 215, 215);
+    align-items: center;
+    align-items: center;
+}
+
+.mb-3 input {
+    font-size: 100%;
+}
+
+.login-detail {
+    margin: 15px 10px;
+}
+
+
+.login-regis {
+    text-align: right;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.login-regis a{
+    font-size: 100%;
+}
+
+.login-error {
+    color: red;
+}

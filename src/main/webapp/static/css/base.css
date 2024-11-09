@@ -1,0 +1,107 @@
+:root {
+    --primary-color: rgb(4, 108, 168);
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+
+    --header-height: 95px;
+    --navbar-height: 40px;
+    --header-with-search-height: calc(var(--header-height) - var(--navbar-height));
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+     /* font-size: 62.5%;  */
+     line-height: 1.1rem;
+     box-sizing: border-box;
+     /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  */
+}
+
+body {
+    font-family: Arial !important;
+}
+
+ /* Responsive */
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin:  0 auto;
+}
+
+.grid__full-width {
+    width: 100%;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+ /* Test */
+.grid__column-2 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 16.6667%;
+}
+
+.grid__column-2-4 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 20%;
+}
+
+.grid__column-10 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 83.3333%;
+}
+
+.select-input {
+    height: 25px;
+    border: 0;
+    background-color: white;
+    align-items: center;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.select-input__label {
+    font-size: 1.0rem;
+    margin-left: 10px;
+}
+
+.select-input__icon {
+    font-size: 0.7rem;
+    position: relative;
+    margin-right: 10px;
+}
+
+.select-input__list {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 25px;
+    background-color: white;
+    border-radius: 2px;
+    padding: 8px 16px;
+    list-style: none;
+    display: none;
+    margin: 0;
+}
+
+.select-input:hover 
+.select-input__list {
+    display: block;
+} 
+
+.formatted-number::after {
+    content: " VNĐ";
+  }
